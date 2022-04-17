@@ -1,0 +1,256 @@
+:root {
+    --color_main : #292a30;
+    --color_element: #ff993d;
+    --color_addition: #323333;
+    --color_custom: #f779ad;
+    --color_hover: #ffff;
+
+    --text_color_main: var(--color_element);
+    --text_color_navigation: var(--color_addition);
+    --text_color_header: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text_color_main);
+
+    font-family: Arial, serif;
+
+    transition: all 0.3s;
+}
+
+body {
+    background: var(--color_main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text_color_header);
+    background: none;
+}
+
+/*+++Scrollbar Style+++*/
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color_element);
+    border-radius: 15px;
+    border: var(--color_main) solid 5px;
+}
+
+/*---Scrollbar Style---*/
+
+
+/*+++Header style+++*/
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.header_top {
+    background: var(--color_element);
+}
+
+.header_bottom {
+    background: var(--color_addition);
+}
+
+.header_navigation {
+    font-size: 110%;
+    font-weight: 300;
+    background: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header_navigation a {
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header_navigation ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header_navigation li, ul, a {
+    background: none;
+}
+
+.header_navigation_top a {
+    color: var(--text_color_navigation);
+}
+
+.header_navigation_top a:hover {
+    color: var(--color_hover);
+}
+
+.header_navigation_bottom a {
+    color: var(--color_hover);
+}
+
+.header_navigation_bottom a:hover {
+    color: var(--color_element);
+}
+
+/*---Header style---*/
+
+/*+++I am Style+++*/
+
+.i_am {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i_am_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+}
+
+.i_am_container_item {
+    margin: 50px;
+}
+
+.i_am_container img {
+    width: 500px;
+    border-radius: 30px;
+}
+
+.my_information {
+    max-width: 600px;
+}
+
+.my_information h1 {
+    font-size: 50px;
+}
+
+.my_information p {
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+/*---I am Style---*/
+
+/*+++About me Style+++*/
+
+.about_me {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_me_container {
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 100px;
+    background: var(--color_addition);
+}
+
+.about_my_outlook_on_life {
+    margin: 45px 0;
+    display: flex;
+}
+
+.about_my_outlook_on_life img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
+.about_my_outlook_on_life p {
+    margin: auto 0;
+}
+
+.about_me_info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about_me_info span {
+    color: var(--color_hover);
+    margin: 0 10px;
+}
+
+.about_me_info_container {
+    display: flex;
+}
+
+.about_me_work {
+    margin: 40px 0;
+}
+
+.about_me_work table {
+    margin: 30px auto 0 auto;
+    border-spacing: 10px;
+}
+
+.about_me_work td {
+    padding: 20px;
+    border: 1px solid var(--color_element);
+    cursor: pointer;
+    color: var(--color_hover);
+}
+
+.about_me_work td a {
+    padding: 20px;
+    color: var(--color_hover);
+    text-decoration: none;
+}
+
+.about_me_work tr:hover td {
+    border-radius: 10px;
+    border-color: var(--color_hover);
+}
+
+.about_me_skills_container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_me_skills_container p {
+    color: var(--color_custom);
+    padding: 10px;
+    border: 1px solid var(--color_element);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 5px;
+    font-weight: 600;
+}
+
+.about_me_skills_container p:hover {
+    color: var(--color_hover);
+    border: 3px solid var(--color_hover);
+    border-radius: 0;
+}
+
+/*---About me Style---*/
+
+/*+++Common Style+++*/
+
+p {
+    margin-bottom: 10px;
+}
+
+/*---Common Style---*/
