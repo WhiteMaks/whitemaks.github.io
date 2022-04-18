@@ -14,10 +14,10 @@
 <header class="header_top">
     <nav class="header_navigation header_navigation_top">
         <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a onclick="scrollToElementByClassName('i_am')">Главная</a></li>
             <li><a onclick="scrollToElementByClassName('about_me')">Обо мне</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Ссылки</a></li>
+<!--            <li><a href="#">Проекты</a></li>-->
+            <li><a onclick="scrollToElementByClassName('links')">Ссылки</a></li>
         </ul>
     </nav>
 </header>
@@ -122,7 +122,13 @@
     </div>
 </div>
 <div class="links">
-
+    <nav class="links_content">
+        <ul>
+            <li><a href="https://github.com/WhiteMaks" target="_blank"><img src="image/github.png" alt="github"/><p>GitHub</p></a></li>
+            <li><a href="https://spb.hh.ru/resume/98442e79ff0868ec600039ed1f32434a444834" target="_blank"><img src="image/hh.png" alt="headhunter"/><p>HeadHunter</p></a></li>
+            <li><a href="https://t.me/white_maks" target="_blank"><img src="image/telegram.png" alt="telegram"/><p>Telegram</p></a></li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>
