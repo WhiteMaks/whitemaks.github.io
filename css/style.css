@@ -26,7 +26,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--text_color_header);
-    background: none;
 }
 
 /*+++Scrollbar Style+++*/
@@ -68,7 +67,6 @@ header {
 .header_navigation {
     font-size: 110%;
     font-weight: 300;
-    background: none;
     width: 80%;
     margin: 0 auto;
 }
@@ -83,10 +81,6 @@ header {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-}
-
-.header_navigation li, ul, a {
-    background: none;
 }
 
 .header_navigation_top a {
@@ -246,6 +240,51 @@ header {
 }
 
 /*---About me Style---*/
+
+/*+++Links Style+++*/
+
+.links {
+    background: var(--color_element);
+}
+
+.links_content {
+    /*padding: 30px;*/
+    /*background: red;*/
+}
+
+.links_content ul {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.links_content li {
+    margin: auto auto;
+}
+
+.links_content a {
+    cursor: pointer;
+    display: flex;
+}
+
+.links_content a:hover p {
+    color: var(--color_hover);
+}
+
+.links_content p {
+    color: var(--color_addition);
+    margin: auto 0;
+    font-weight: 600;
+}
+
+.links_content img {
+    margin-right: 5px;
+    width: 40px;
+}
+
+/*---Links Style---*/
 
 /*+++Common Style+++*/
 
