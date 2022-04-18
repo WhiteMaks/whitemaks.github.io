@@ -4,16 +4,12 @@
     --color_addition: #323333;
     --color_custom: #f779ad;
     --color_hover: #ffff;
-
-    --text_color_main: var(--color_element);
-    --text_color_navigation: var(--color_addition);
-    --text_color_header: white;
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--text_color_main);
+    color: var(--color_element);
 
     font-family: Arial, serif;
 
@@ -25,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--text_color_header);
+    color: var(--color_hover);
 }
 
 /*+++Scrollbar Style+++*/
@@ -84,7 +80,7 @@ header {
 }
 
 .header_navigation_top a {
-    color: var(--text_color_navigation);
+    color: var(--color_addition);
 }
 
 .header_navigation_top a:hover {
