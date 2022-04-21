@@ -138,9 +138,9 @@ header {
     -webkit-animation: notransform 8s infinite;
     animation: notransform 8s infinite;
 
-    -webkit-transform: rotate3d(1, .5, 1, 10deg);
-    -ms-transform: rotate3d(1, .5, 1, 10deg);
-    transform: rotate3d(1, .5, 1, 10deg);
+    -webkit-transform: rotate3d(1, .5, 1, 5deg);
+    -ms-transform: rotate3d(1, .5, 1, 5deg);
+    transform: rotate3d(1, .5, 1, 5deg);
 }
 
 @-webkit-keyframes notransform {
