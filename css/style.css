@@ -114,6 +114,12 @@ header {
     justify-content: space-around;
     align-items: center;
     margin: 60px;
+
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 400px;
+    perspective: 400px;
 }
 
 .i_am_container_item {
@@ -127,6 +133,25 @@ header {
 
 .my_information {
     max-width: 600px;
+
+
+    -webkit-animation: notransform 8s infinite;
+    animation: notransform 8s infinite;
+
+    -webkit-transform: rotate3d(1, .5, 1, 10deg);
+    -ms-transform: rotate3d(1, .5, 1, 10deg);
+    transform: rotate3d(1, .5, 1, 10deg);
+}
+
+@-webkit-keyframes notransform {
+    50% {
+        transform: none;
+    }
+}
+@keyframes notransform {
+    50% {
+        transform: none;
+    }
 }
 
 .my_information h1 {
