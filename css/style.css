@@ -243,11 +243,6 @@ header {
     background: var(--color_element);
 }
 
-.links_content {
-    /*padding: 30px;*/
-    /*background: red;*/
-}
-
 .links_content ul {
     padding: 40px;
     display: flex;
@@ -287,6 +282,10 @@ header {
 
 p {
     margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*---Common Style---*/
