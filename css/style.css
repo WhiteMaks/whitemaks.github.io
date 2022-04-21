@@ -240,7 +240,7 @@ header {
 }
 
 .about_me_skills_container {
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -258,6 +258,27 @@ header {
 .about_me_skills_container p:hover {
     color: var(--color_hover);
     border: 1px solid transparent;
+}
+
+.my_work_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.my_work_instruments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_work_instruments_item {
+    width: 300px;
+    /*height: 100px;*/
+}
+
+.my_work_instruments_item img {
+    width: 100%;
+    height: 100px;
 }
 
 /*---About me Style---*/
