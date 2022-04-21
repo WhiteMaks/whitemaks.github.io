@@ -50,6 +50,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 16px 0;
+    z-index: 9999;
 }
 
 .header_top {
@@ -100,7 +101,8 @@ header {
 /*+++I am Style+++*/
 
 .i_am {
-    width: 100%;
+    background: url("../image/background.gif") no-repeat center center fixed;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -114,6 +116,12 @@ header {
     justify-content: space-around;
     align-items: center;
     margin: 60px;
+
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 400px;
+    perspective: 400px;
 }
 
 .i_am_container_item {
@@ -129,6 +137,17 @@ header {
     max-width: 600px;
 }
 
+@-webkit-keyframes notransform {
+    50% {
+        transform: none;
+    }
+}
+@keyframes notransform {
+    50% {
+        transform: none;
+    }
+}
+
 .my_information h1 {
     font-size: 50px;
 }
@@ -136,6 +155,13 @@ header {
 .my_information p {
     margin-top: 50px;
     font-size: 22px;
+
+    -webkit-animation: notransform 8s infinite;
+    animation: notransform 8s infinite;
+
+    -webkit-transform: rotate3d(1, .5, 1, 5deg);
+    -ms-transform: rotate3d(1, .5, 1, 5deg);
+    transform: rotate3d(1, .5, 1, 5deg);
 }
 
 /*---I am Style---*/
@@ -231,8 +257,7 @@ header {
 
 .about_me_skills_container p:hover {
     color: var(--color_hover);
-    border: 3px solid var(--color_hover);
-    border-radius: 0;
+    border: 1px solid transparent;
 }
 
 /*---About me Style---*/
